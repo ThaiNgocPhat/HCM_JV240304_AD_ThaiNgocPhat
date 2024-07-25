@@ -39,22 +39,4 @@ public class LaptopWithTypeLaptop {
                 ", totalLaptop=" + totalLaptop +
                 '}';
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        LaptopWithTypeLaptop that = (LaptopWithTypeLaptop) o;
-
-        if (totalLaptop != that.totalLaptop) return false;
-        return laptopType != null ? laptopType.equals(that.laptopType) : that.laptopType == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = laptopType != null ? laptopType.hashCode() : 0;
-        result = 31 * result + totalLaptop;
-        return result;
-    }
 }
